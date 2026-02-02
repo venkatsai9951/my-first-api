@@ -21,6 +21,9 @@ const authenticate = (req, res, next) => {
 //these are the changes that i have made on the test branch
 
 // GET /users?id=101
+
+// these are the changes im making in testbranch2
+// removes master line and checking
 app.get("/users", authenticate, (req, res) => {
   const userId = parseInt(req.query.id);
   const user = users.find((u) => u.id === userId);
